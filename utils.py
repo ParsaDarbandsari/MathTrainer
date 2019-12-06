@@ -18,3 +18,9 @@ def time_convector(seconds, alignment="long"):
 	
 	
 	return convented_time
+
+def view_mistakes(mistakes):
+	mistake_number = 0
+	for m in mistakes:
+		mistake_number += 1
+		print(f"{mistake_number}.\t{m}")
