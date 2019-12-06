@@ -4,6 +4,21 @@ def check_answer(first_num, second_num, given_answer, operation):
 			return True
 		else:
 			return False
+	if operation == "-":
+		if str(first_num - second_num) == given_answer:
+			return True
+		else:
+			return False
+	if operation == "*":
+		if str(first_num * second_num) == given_answer:
+			return True
+		else:
+			return False
+	if operation == "/":
+		if str(first_num // second_num) == given_answer:
+			return True
+		else:
+			return False
 
 
 def time_convector(seconds, alignment="long"):
@@ -18,6 +33,7 @@ def time_convector(seconds, alignment="long"):
 	
 	
 	return convented_time
+
 
 def view_mistakes(mistakes):
 	mistake_number = 0
