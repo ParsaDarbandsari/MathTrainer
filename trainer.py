@@ -18,7 +18,7 @@ for i in range(testing_questions):
 	if mark is True:
 		correct_answers += 1
 	else:
-		mistakes.append(f"{question}{player_answer}")
+		mistakes.append(f"{question}{player_answer}, correct answer: {first_number + second_number}")
 
 ending_time = time.time()
 time_lapsed = ending_time - starting_time
