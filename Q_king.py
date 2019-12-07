@@ -22,7 +22,7 @@ def q_king(operation, number_range, time_limit):
 		else:
 			mistakes.append(f"{question}{player_answer}, correct answer: {first_number + second_number}")
 		ending_time = time.time()
-		time_lapsed = ending_time - starting_time
+		time_lapsed += ending_time - starting_time
 	
 	print(f"\n"
 		  f"You Have got managed to answer {qs_answered} question(s) and {correct_answers} of them were correct")
