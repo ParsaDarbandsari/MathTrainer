@@ -33,3 +33,13 @@ def view_mistakes(mistakes):
 	for m in mistakes:
 		mistake_number += 1
 		print(f"{mistake_number}.\t{m}")
+
+def calculate(a, b, operation):
+	if operation == '+':
+		return a + b
+	if operation == '-':
+		return a - b
+	if operation == '*':
+		return a * b
+	if operation == '/':
+		return a // b
