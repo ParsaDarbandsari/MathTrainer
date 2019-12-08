@@ -13,6 +13,10 @@ def q_king(operation, number_range, time_limit):
 		current_operation = operation[rand(0, (len(operation) - 1))]
 		first_number = rand(1, number_range)
 		second_number = rand(1, number_range)
+		if first_number < second_number:
+			temp = first_number
+			first_number = second_number
+			second_number = temp
 		question = f"{first_number} {current_operation} {second_number} = "
 		player_answer = input(question)
 		qs_answered += 1
