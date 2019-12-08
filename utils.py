@@ -43,3 +43,27 @@ def calculate(a, b, operation):
 		return a * b
 	if operation == '/':
 		return a // b
+
+
+def get_operation():
+	operation = []
+	operation_letters = input("Which operation(s) do you want to have in your questions\n"
+							  "(Put the letter of one or more operation you want to have in order to add it, please separate your letters using comma)\n\n"
+							  "A) Addition (+)\n"
+							  "B) Subtraction (-)\n"
+							  "C) Multiplication (*)\n"
+							  "D) Division(/)\n"
+							  "Put your operation(s) here: ")
+	operation_letters = operation_letters.upper()
+	operation_letters = operation_letters.replace(' ', '')
+	operation_letters = operation_letters.split(',')
+	operation_letter_translator = {
+		"A": "+",
+		"B": "-",
+		"C": "*",
+		"D": "/"
+	}
+	for ols in operation_letters:
+		operation.append(operation_letter_translator[ols])
+	
+	return operation
