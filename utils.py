@@ -33,3 +33,10 @@ def view_mistakes(mistakes):
 	for m in mistakes:
 		mistake_number += 1
 		print(f"{mistake_number}.\t{m}")
+
+def swap(a, b):
+	temp = a
+	a = b
+	b = temp
+	
+	return a, b
