@@ -34,6 +34,16 @@ def view_mistakes(mistakes):
 		mistake_number += 1
 		print(f"{mistake_number}.\t{m}")
 
+def calculate(a, b, operation):
+	if operation == '+':
+		return a + b
+	if operation == '-':
+		return a - b
+	if operation == '*':
+		return a * b
+	if operation == '/':
+		return a // b
+
 
 def get_operation():
 	operation = []

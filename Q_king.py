@@ -24,7 +24,7 @@ def q_king(operation, number_range, time_limit):
 		if mark is True:
 			correct_answers += 1
 		else:
-			mistakes.append(f"{question}{player_answer}, correct answer: {first_number + second_number}")
+			mistakes.append(f"{question}{player_answer}, correct answer: {calculate(first_number, second_number, current_operation)}")
 		ending_time = time.time()
 		time_lapsed += ending_time - starting_time
 	
