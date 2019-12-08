@@ -12,9 +12,7 @@ def time_attack(operation, number_range, testing_qs):
 		first_number = rand(1, number_range)
 		second_number = rand(1, number_range)
 		if first_number < second_number:
-			temp = first_number
-			first_number = second_number
-			second_number = temp
+			first_number, second_number = swap(first_number, second_number)
 		question = f"{first_number} {current_operation} {second_number} = "
 		player_answer = input(question)
 		mark = check_answer(first_number, second_number, player_answer, current_operation)

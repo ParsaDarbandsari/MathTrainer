@@ -67,3 +67,10 @@ def get_operation():
 		operation.append(operation_letter_translator[ols])
 	
 	return operation
+
+def swap(a, b):
+	temp = a
+	a = b
+	b = temp
+	
+	return a, b
