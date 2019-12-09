@@ -24,7 +24,7 @@ def time_attack(operation, number_range, testing_qs):
 	time_lapsed = ending_time - starting_time
 	mins_taken, secs_taken = time_convector(time_lapsed)
 	print(f"\n"
-		  f"You Have got {correct_answers} questions right out of {testing_qs} questions.\n"
+		  f"You Have got {correct_answers} questions right out of {testing_qs} questions\n"
 		  f"in {mins_taken} minute(s) and {secs_taken} second(s)")
 	
 	if mistakes != []:
