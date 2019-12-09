@@ -1,3 +1,6 @@
+import time
+
+
 def check_answer(first_num, second_num, given_answer, operation):
 	if operation == "+":
 		if str(first_num + second_num) == given_answer:
@@ -74,3 +77,12 @@ def swap(a, b):
 	b = temp
 	
 	return a, b
+
+def countdown(game_mode, countdown_range=3, time_gap=1.5):
+	print(f"Your game of {game_mode}\nstarts in...\n")
+	countdown_numbers = [i for i in range(countdown_range)]
+	countdown_numbers.reverse()
+	
+	for i in countdown_numbers:
+		print(f"{i + 1}...\n")
+		time.sleep(time_gap)
