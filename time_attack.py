@@ -1,4 +1,3 @@
-from random import randint as rand
 from utils import *
 import time
 
@@ -11,9 +10,7 @@ def time_attack(operation, number_range, testing_qs):
 		current_operation = operation[rand(0, (len(operation) - 1))]
 		first_number = rand(1, number_range)
 		second_number = rand(1, number_range)
-		if first_number < second_number:
-			first_number, second_number = swap(first_number, second_number)
-		question = f"{first_number} {current_operation} {second_number} = "
+		question = generate_question(first_number, second_number, current_operation)
 		player_answer = input(question)
 		mark = check_answer(first_number, second_number, player_answer, current_operation)
 		if mark is True:
