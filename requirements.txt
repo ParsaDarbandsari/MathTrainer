@@ -1,1 +1,1 @@
-#  use "pip freeze" to fill this file automatically
+#  use "pip freeze" command to fill this file automatically
