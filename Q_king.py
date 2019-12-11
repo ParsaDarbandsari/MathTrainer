@@ -13,9 +13,7 @@ def q_king(operation, number_range, time_limit):
 		current_operation = operation[rand(0, (len(operation) - 1))]
 		first_number = rand(1, number_range)
 		second_number = rand(1, number_range)
-		if first_number < second_number:
-			first_number, second_number = swap(first_number, second_number)
-		question = f"{first_number} {current_operation} {second_number} = "
+		question = generate_question(first_number, second_number, current_operation)
 		player_answer = input(question)
 		qs_answered += 1
 		mark = check_answer(first_number, second_number, player_answer, current_operation)

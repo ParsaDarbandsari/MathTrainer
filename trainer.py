@@ -19,6 +19,7 @@ if game_mode == 'a':
 	testing_questions = int(input("How many questions do you want to answer? "))
 	countdown('time attack')
 	time_attack(operation, operating_number_range, testing_questions)
-if game_mode == 'Q king':
+if game_mode == 'b':
 	time_limit = float(input("How much is your time limit(in secs)? "))
+	countdown('Q king')
 	q_king(operation, operating_number_range, time_limit)

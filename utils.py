@@ -1,3 +1,4 @@
+from random import randint as rand
 import time
 
 
@@ -86,3 +87,10 @@ def countdown(game_mode, countdown_range=3, time_gap=1.5):
 	for i in countdown_numbers:
 		print(f"{i + 1}...\n")
 		time.sleep(time_gap)
+
+
+def generate_question(first_number, second_number, operation):
+	if first_number < second_number:
+		first_number, second_number = swap(first_number, second_number)
+	
+	return f"{first_number} {operation} {second_number} = "
