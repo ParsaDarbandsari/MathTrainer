@@ -12,4 +12,4 @@ You are more than welcomed to fork this repository and add in your own changes i
 ##### Non-Developers
 You can send a message to my github account and request your change. But before you start complaining about everything, keep in mind that this whole project is made by a 12 year old boy **(NO LIES)**.  
 
- > NOTE: This file will be updated as the project goes on
+ > NOTE: This file will be updated with each release
